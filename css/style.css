@@ -184,10 +184,11 @@ p.copyright a:hover{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* upto mobile */
 @media (max-width: 425px) {
-    .loga a { font-size: 2em; }
+    .logo a { font-size: 2em; }
     .main { padding-top: 15%; }
     img.avatar { margin-top: 25%; }
     h2.contact { font-size: 2.5em; }
     p.contact { font-size: 1.25em; color: #3f7f7c; }
     ul.social li a { font-size: .75em;}
+    div.section-one { padding-bottom: 5%; }
 }
