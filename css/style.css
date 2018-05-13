@@ -15,6 +15,7 @@
 .green { background-color: #7accc8;}
 .lightgray { background-color : #bfbfbf;}
 .harbourblue { background-color : #14466c;}
+.black { background-color : #000000;}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -57,9 +58,9 @@ header.main_nav {
 }
 
 .logo a:hover{
-    background-color: #14466c;
-    color: #000000;
-    border-color: #000000;
+    background-color: #000000;;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
 }
 
 /* Contents - section-one
@@ -92,6 +93,14 @@ div.section-one a:hover{
     background-color: #ffffff;
     color: #bfbfbf;
     border-color: #bfbfbf;
+}
+
+/* Contents - section-two
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+p.section-two{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
 }
 
 /* Contents - Contact
@@ -150,6 +159,7 @@ ul.social li.twitter a:hover { color: rgb(0,172,237);}
 ul.social li.instagram a:hover { color: rgb(81,127,237);}
 ul.social li.youtube a:hover { color: rgb(189,0,0);}
 ul.social li.flickr a:hover { color: rgb(255,0,132);}
+ul.social li.codepen a:hover { color: rgb(0, 0, 0);}
 ul.social li.linkedin a:hover { color: rgb(0,123,132);}
 ul.social li.github a:hover { color: rgb(46, 48, 53);}
 
@@ -157,6 +167,16 @@ p.copyright {
     text-align: center;
     color: #666666;
     font-size: 1em;
+}
+
+p.copyright a{
+    font-size: 2.5em;
+    color: #000000;
+    text-decoration: none;
+}
+
+p.copyright a:hover{
+    color: #bfbfbf;
 }
 
 /* Media Queries
