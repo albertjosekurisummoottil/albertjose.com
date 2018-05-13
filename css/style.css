@@ -16,6 +16,7 @@
 .lightgray { background-color : #bfbfbf;}
 .harbourblue { background-color : #14466c;}
 .black { background-color : #000000;}
+.whitesmoke { background-color : #f3f3f3;}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -31,9 +32,9 @@ body {
     margin: 0.67em;
 } */
 
-h2.contact { color: #ffffff; }
+h2.contact { color: #000000; }
 
-p.contact { color: #ffffff; }
+p.contact { color: #000000; }
 
 /* Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -49,16 +50,16 @@ header.main_nav {
 
 .logo a{
     font-size: 3em;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
     text-transform: uppercase;
     padding: 2px 10px 0 10px;
     margin: 0;
 }
 
 .logo a:hover{
-    background-color: #000000;;
+    background-color: #f3f3f3;;
     color: #bfbfbf;
     border-color: #bfbfbf;
 }
@@ -118,7 +119,7 @@ div.social a {
 }
 
 div.social a{
-    color: #ffffff;
+    color: #000000;
 }
 
 div.social a.pointer{
