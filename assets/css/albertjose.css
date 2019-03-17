@@ -7,17 +7,20 @@
 }
 
 :root{
+--black: rgb(0, 0, 0);
 --blackPearl: rgb(23,37,42);
 --atoll: rgb(43,122,120);
 --lightSeaGreen: rgb(58,175,169);
 --oysterBay: rgb(222,242,241);
 --azure: rgb(254,255,255);
+--white: rgb(255, 255, 255);
+--yellow: rgb(255, 255, 0);
 }
 
 body {
  font-family: 'Lora', serif;
  background: var(--lightSeaGreen);
- color: var(--azure);
+ color: var(--blackPearl);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,3 +43,63 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 999;
 }
 /*preloader end*/
+
+/*header start*/
+.header{
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ /* for the rest of the elements */
+ position: relative;
+ 
+}
+@media screen and (max-width: 768px){
+ .header {
+  background: url('../video/jpg/typingOnKeyboard.jpg')center/cover fixed no-repeat;
+ }
+}
+/*header end*/
+
+/*banner start*/
+.banner{
+	margin-left: 2rem;
+	border-left: 0.5rem solid var(--yellow);
+}
+
+.banner__title{
+	font-size: 3rem;
+	left-spacing: 0.25rem;
+	margin-left: 1rem;
+	/*text-transform: uppercase;*/
+	color: var(--white)
+}
+.banner__title-name{
+color: var(--yellow);	
+font-size: 4rem;
+/*font-style: italic;*/
+/*text-decoration: underline;*/
+}
+/*banner end*/
+
+/*video start*/
+.video__container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;	
+}
+
+.video__item{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*video end*/
+
+
+
+/* start*/
+/* end*/
+

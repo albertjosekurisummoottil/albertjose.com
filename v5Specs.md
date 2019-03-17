@@ -4,11 +4,15 @@ colors from - https://visme.co/blog/website-color-schemes/
 
 24 - Clean and Modern
 
+Black - #000000 -RGB(0, 0, 0)
 Black Pearl - #17252A - RGB(23,37,42)
 Atoll - #2B7A78 - RGB(43,122,120)
 Light Sea Green - #3AAFA9 - RGB(58,175,169)
 Oyster Bay - #DEF2F1 - RGB(222,242,241)
 Azure - #FEFFFF - RGB(254,255,255)
+Yellow - #FFFF00 - RGB(255, 255, 0)
+
+https://www.htmlcsscolor.com
 /----------/
 google font - https://artisanthemes.io/best-google-fonts-combinations-modern-agency-website/
 
