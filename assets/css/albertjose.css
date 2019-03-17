@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+--blackPearl: rgb(23,37,42);
+--atoll: rgb(43,122,120);
+--lightSeaGreen: rgb(58,175,169);
+--oysterBay: rgb(222,242,241);
+--azure: rgb(254,255,255);
+}
+
+body {
+ font-family: 'Lora', serif;
+ background: var(--lightSeaGreen);
+ color: var(--azure);
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+ /*text-transform: uppercase;*/
+}
+
+/*preloader start*/
+.preloader{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: var(--azure);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+/*preloader end*/
