@@ -387,6 +387,9 @@ font-size: 4rem;
 	text-align: center;
 	padding: 2rem 0;
 }
+.map__info{
+background: rgba(46,40,42,0.8);
+}
 
 .map-item__icon{
 	font-size: 2rem;
@@ -396,7 +399,7 @@ font-size: 4rem;
 .map-item__title{
 	text-transform: capitalize;
 	margin: 1rem 0;
-	color:var(--white);
+	color:var(--azure);
 }
 
 .map-item__text{
@@ -419,10 +422,15 @@ font-size: 4rem;
 	.map-item{
 		flex:0 0 33.33%;
 		margin: o;
+		color:var(--black);
 	}
 
 	.map-item__text{
 		width:80%;
+		color: var(--azure);
+	}
+	.map-item__title{
+		color:var(--azure);
 	}
 }
 /*map section end*/
