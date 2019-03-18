@@ -266,6 +266,48 @@ font-size: 4rem;
 }
 /*social iconsend*/
 
+/*video switch start*/
+.video__switch-container{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.video__switch-container{
+		display: block;
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
+		z-index: 3;
+	}
+}
+
+.video__switch{
+	position: relative;
+	width:4.5rem;
+	background: var(--white);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.25rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+}
+
+.video__switch-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:50%;
+	border-radius: 0.25rem;
+	transition: all 0.3s ease;
+	background: var(--blackPearl);
+}
+
+.btnSlide{
+	left:50%;
+}
+/*video switch end*/
 
 
 
