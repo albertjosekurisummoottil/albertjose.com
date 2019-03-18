@@ -1,10 +1,19 @@
 $(document).ready(function(){
 	// preloader
 	$('.preloader').fadeOut();
+
 	// navBtn
 	$('.navBtn').click(function(){
 		$('.nav').toggleClass('nav--show')
 	});
+	
+	//collapse after clicking link
+    $(document).on('click','.nav--show',function(e) {
+    if( $(e.target).is('a') ) {    	
+        $('.nav').toggleClass('nav--show')
+      }
+    });
+
 	//video switch
 	$('.video__switch-container').click(function(){
 		const value = $('.video__switch-btn').hasClass('btnSlide');
@@ -17,5 +26,7 @@ $(document).ready(function(){
 			$('#video').get(0).pause()
 		}
 	});
+
+
 
 });
