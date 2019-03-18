@@ -23,7 +23,24 @@ body {
  color: var(--blackPearl);
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* global */
+/* section padding */
+.section-padding{
+ padding: 3rem 0;
+}
+.flexbox-parent{
+ max-width: 95vw;
+ margin: 2rem auto;
+}
+@media screen and (min-width:768px){
+ .flexbox-parent--medium{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+}
+
+h1, h2, h3, h4, h5, h6, p {
  font-family: 'Montserrat', sans-serif;
  font-weight: 300;
  /*text-transform: uppercase;*/
@@ -309,7 +326,106 @@ font-size: 4rem;
 }
 /*video switch end*/
 
+/*contact section start*/
+.contact{
+	min-height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('../img/contactus/contactus.jpg')center/cover fixed no-repeat;
+	clip-path: polygon(0 10%,100% 0,100% 90%,0 100%);
+}
 
+.contact__title{
+ 	text-align: center;
+ 	font-size: 4rem;
+ 	color: var(--blue);
+ 	text-transform: uppercase;
+ 	margin:1rem 0;
+ 	letter-spacing: 0.5rem;
+}
+
+.contact__input{
+ 	background: transparent;
+ 	border:none;
+ 	border-bottom: 0.25rem solid var(--white);
+ 	font-size: 2rem;
+ 	padding: 0.25rem;
+ 	color:var(--white);
+ 	outline: none;
+ 	text-transform: uppercase;
+ 	margin: 0.5rem;
+}
+
+.contact__submit{
+	 cursor: pointer;
+	 display: inline-block;
+	 font-size: 2rem;
+	 margin:0.5rem;
+	 text-transform: uppercase;
+	 padding: 0.25rem 1rem;
+	 background: transparent;
+	 color: var(--yellow);
+	 border-color: var(--yellow);
+	 border-radius: 0.5rem;
+	 transition: all 0.5s linear;
+}
+.contact__submit:hover{
+	 background: var(--yellow);
+	 color: var(--black);
+	 font-size: 1.5rem;
+	 color:red;
+}
+/*contact section end*/
+
+/*map section start*/
+.map{
+	position: relative;
+}
+
+.map-item{
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.map-item__icon{
+	font-size: 2rem;
+	color: var(--yellow);
+}
+
+.map-item__title{
+	text-transform: capitalize;
+	margin: 1rem 0;
+	color:var(--white);
+}
+
+.map-item__text{
+	width: 50%;
+	margin: 0 auto;
+	color: var(--azure);
+	/*text-transform:uppercase;*/
+}
+
+@media screen and (min-width:768px){
+	.map__info{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 90%;
+		background: rgba(46,40,42,0.8);
+	}
+
+	.map-item{
+		flex:0 0 33.33%;
+		margin: o;
+	}
+
+	.map-item__text{
+		width:80%;
+	}
+}
+/*map section end*/
 
 /* start*/
 /* end*/
