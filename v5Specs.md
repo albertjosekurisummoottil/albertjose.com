@@ -32,5 +32,9 @@ http://converterpoint.com/
 https://loading.io/
 /----------/
 svg converter logo - https://svgcreator.com
+/----------/
+html validator https://validator.w3.org
+/----------/
+brand colors eg github https://brandcolors.net/
 
 
