@@ -127,6 +127,27 @@ font-size: 4rem;
 /*video overlay end*/
 
 /*nav start*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .navBtn{
 	position: fixed;
 	top:5%;
@@ -139,6 +160,13 @@ font-size: 4rem;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
+
+.navBtn:hover{
+	color: var(--white);
+	transform: rotate(45deg);
+	transition: all 0.5s linear;
+}
+
 @keyframes pulse{
 	0%{
 	transform: scale(1.0)
