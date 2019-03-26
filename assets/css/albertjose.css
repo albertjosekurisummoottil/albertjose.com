@@ -309,6 +309,14 @@ font-size: 4rem;
 .social-icon-github:hover{
 	color: #333333;
 }
+
+.social-icon-jsfiddle{
+	color: #0084ff;
+}
+
+.social-icon-jsfiddle:hover{
+	color: #0084ff;
+}
 /*social iconsend*/
 
 /*video switch start*/
