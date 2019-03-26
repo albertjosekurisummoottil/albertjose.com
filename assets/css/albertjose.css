@@ -161,11 +161,11 @@ font-size: 4rem;
 	animation-iteration-count: infinite;
 }
 
-.navBtn:hover{
+/*.navBtn:hover{
 	color: var(--white);
 	transform: rotate(45deg);
 	transition: all 0.5s linear;
-}
+}*/
 
 @keyframes pulse{
 	0%{
@@ -238,6 +238,23 @@ font-size: 4rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 768px){
+	.navBtn{
+		font-size: 2.05rem;
+	}
+
+	.banner__title{
+		color: var(--black);
+		font-size: 2.0rem;
+	}
+
+	.banner__title-name{
+		color: var(--yellow);	
+		font-size: 2.5rem;
+	}
+}
+
 /*nav end*/
 
 /*social icons start*/
@@ -334,20 +351,6 @@ font-size: 4rem;
 }
 
 @media screen and (max-width: 768px){
-	.navBtn{
-		font-size: 2.05rem;
-	}
-
-	.banner__title{
-		color: var(--black);
-		font-size: 2.0rem;
-	}
-
-	.banner__title-name{
-		color: var(--yellow);	
-		font-size: 2.5rem;
-	}
-
 	.social-icon {
 	    padding: .2rem;
 	    font-size: 1.5rem;
