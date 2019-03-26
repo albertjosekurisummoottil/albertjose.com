@@ -262,6 +262,15 @@ font-size: 4rem;
 		color: var(--yellow);
 		transform: scale(2.0);
 	}
+
+.social-icon-globe{
+	color: #38761D;
+}
+
+.social-icon-globe:hover{
+	color: #38761D;
+}
+
 .social-icon-facebook{
 	color: #3b5998;
 }
