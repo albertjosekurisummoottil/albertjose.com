@@ -27,6 +27,24 @@ $(document).ready(function(){
 		}
 	});
 
+	//magnific popup
+	$('#projects__modal').magnificPopup({
+    	delegate: 'a', // child items selector, by clicking on it popup will open
+    	type: 'image',
+    	image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+              // return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">'+item.el.attr('data-source')+'</a>';
+              // return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">'+item.el.attr('data-title')+'</a>';
+              return ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">' + item.el.attr('title') + '</a>';
+            }
+          },
+    	gallery: {
+      	// options for gallery
+      	enabled: true
+    }
+    // other options
+  });
 
 
 });

@@ -15,6 +15,10 @@
 --azure: rgb(254,255,255);
 --white: rgb(255, 255, 255);
 --yellow: rgb(255, 255, 0);
+--grey: rgb(128, 128, 128);
+--brightturquoise: rgb(8, 253, 216);
+--granitegreen: rgb(143, 132, 95);
+
 }
 
 body {
@@ -80,7 +84,8 @@ h1, h2, h3, h4, h5, h6, p {
 /*banner start*/
 .banner{
 	margin-left: 2rem;
-	border-left: 0.5rem solid var(--yellow);
+	border-left: 0.5rem solid var(--granitegreen);
+	z-index: 3;
 }
 
 .banner__title{
@@ -88,13 +93,14 @@ h1, h2, h3, h4, h5, h6, p {
 	left-spacing: 0.25rem;
 	margin-left: 1rem;
 	/*text-transform: uppercase;*/
-	color: var(--white)
+	color: var(--black);
+	z-index:5;
 }
 .banner__title-name{
-color: var(--yellow);	
-font-size: 4rem;
-/*font-style: italic;*/
-/*text-decoration: underline;*/
+	color: var(--granitegreen);	
+	font-size: 4rem;
+	/*font-style: italic;*/
+	/*text-decoration: underline;*/
 }
 /*banner end*/
 
@@ -121,7 +127,7 @@ font-size: 4rem;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(222,242,241, 0.3);
+	background: rgba(255, 255, 255, 0.8);
 	z-index: 2;
 }
 /*video overlay end*/
@@ -250,11 +256,10 @@ font-size: 4rem;
 	}
 
 	.banner__title-name{
-		color: var(--yellow);	
+		color: var(--granitegreen);	
 		font-size: 2.5rem;
 	}
 }
-
 /*nav end*/
 
 /*social icons start*/
@@ -276,7 +281,7 @@ font-size: 4rem;
 }
 
 .social-icon:hover{
-		color: var(--yellow);
+		color: var(--granitegreen);
 		transform: scale(2.0);
 	}
 
@@ -434,13 +439,13 @@ font-size: 4rem;
 	 text-transform: uppercase;
 	 padding: 0.25rem 1rem;
 	 background: transparent;
-	 color: var(--yellow);
-	 border-color: var(--yellow);
+	 color: var(--granitegreen);
+	 border-color: var(--granitegreen);
 	 border-radius: 0.5rem;
 	 transition: all 0.5s linear;
 }
 .contact__submit:hover{
-	 background: var(--yellow);
+	 background: var(--granitegreen);
 	 color: var(--black);
 	 font-size: 1.5rem;
 	 color:red;
@@ -462,7 +467,7 @@ background: rgba(46,40,42,0.8);
 
 .map-item__icon{
 	font-size: 2rem;
-	color: var(--yellow);
+	color: var(--granitegreen);
 }
 
 .map-item__title{
@@ -519,6 +524,122 @@ a[href^="mailto"], a[href^="tel"]{
 }
 /*map section end*/
 
+/*section reverse title start*/
+.reverse-section-title__container{
+	display: flex;
+	flex-direction:row-reverse;
+	padding: 2rem 1.5rem;
+}
+.reverse-section-title__icon{
+	font-size: 4rem;
+	color: var(--granitegreen);
+	margin-left: 1rem;
+}
+.reverse-section-title__text{
+	line-height: 1.5;
+	border-right: 0.3rem solid var(--grey);
+	padding-right:1rem;
+}
+.reverse-section-title__name{
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+}
+.reverse-section-title__info{
+	color: var(--grey);
+}
+
+@media screen and (max-width: 768px){
+	.reverse-section-title__container{
+		padding: 1rem .75rem;
+	}
+	.reverse-section-title__icon{
+		font-size: 2rem;
+	}
+	.reverse-section-title__text{
+		/*padding-right: .5rem;*/
+	}
+	.reverse-section-title__name{
+		font-size: 1.5rem;
+	}
+}
+/*section reverse title end*/
+
+/* projects section start*/
+.project{
+	position: relative;
+	background: linear-gradient(var(--granitegreen),var(--granitegreen));
+}
+
+.project__img{
+	display: block;
+	width: 100%;
+	transition: all 0.5s linear; 
+}
+
+.project:hover .project__img{
+ 	opacity: 0.5;
+}
+
+.project__icon{
+	font-size: 4rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: all 0.5s linear;
+	transform: scale(0);
+	color:	var(--black);
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.project:hover .project__icon{
+ 	transform: scale(1) translate(-50%,-50%); 
+}
+
+.project__icon:hover{
+	color:var(--white);
+}
+
+.project__outline{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	outline: 0.5rem solid var(--black);
+	outline-offset: -2rem;
+	transform: scale(0);
+	transition: all 0.5s linear;
+}
+
+.project:hover .project__outline{
+	transform: scale(1)
+}
+
+.mfp-title a.image-source-link {
+    color: white;
+    text-decoration: none;
+}
+.mfp-title a:hover.image-source-link {
+    font-size: 1.1rem;
+}
+
+
+
+@media screen and (min-width:768px){ 
+	.project{
+		flex: 0 0 50%;
+	}
+}
+
+@media screen and (min-width:992px){ 
+	.project{
+		flex: 0 0 25%;
+	}
+}
+/* projects section end*/
 /* start*/
 /* end*/
 
