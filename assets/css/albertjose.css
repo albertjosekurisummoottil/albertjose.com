@@ -639,7 +639,8 @@ a[href^="mailto"], a[href^="tel"]{
 @media screen and (min-width:992px){ 
 	.project{
 		/*flex: 0 0 25%;*/
-		flex: 0 0 25%;
+		/* flex: 0 0 25%; */
+		flex: 0 0 33.3333%;
 		/*flex: 0 0 50%;*/
 	}
 }
